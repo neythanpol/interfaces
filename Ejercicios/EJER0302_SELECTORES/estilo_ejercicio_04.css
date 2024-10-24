@@ -1,0 +1,68 @@
+
+
+:not(#nombre, #puntosCordura){
+    font-family: 'Grenze', sans-serif;
+}
+
+:not(input[type="submit"]){
+    font-size: 1.05em;
+}
+
+h1{
+    font-size: 3em !important;
+}
+
+fieldset > div{
+    padding-bottom: 1%;
+}
+
+div > input {
+    background-color: lightgoldenrodyellow;
+    transition: background-color 0.3s;
+}
+
+input[type="text"]:invalid{
+    background-color: lightcoral;
+}
+
+div > select{
+    border-radius: 15px;
+    font-family: 'Grenze', sans-serif;
+}
+
+input[type="number"]:invalid{
+    background-color: lightcoral;
+}
+
+#dificultad{
+    position: relative;
+}
+
+input[type="checkbox"]:checked::after{
+    content: url(cthulu.png);
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(cthulhu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 25px;
+}
+
+form input[type="submit"]:nth-of-type(1){
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.3 ease;
+}
+
+form input[type="submit"]:nth-of-type(1):hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+div > p > a:visited{
+    color: rgb(4, 102, 45);
+}
