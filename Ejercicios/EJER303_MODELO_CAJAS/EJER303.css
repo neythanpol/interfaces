@@ -54,7 +54,6 @@ body::before{
 
 p:first-of-type::before{
     content: url(computer.png);
-    display: inline-block;
     float: left;
     margin-right: 20px;
 }
