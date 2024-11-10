@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(216, 213, 213);
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div:nth-of-type(1){
+    background-color: rgb(243, 206, 151);
+    text-align: center;
+    border: 2px solid rgb(202, 171, 125);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+div:nth-of-type(1) > p{
+    margin-bottom: 50px;
+}
+
+div:nth-of-type(2){
+    background-color: rgb(235, 240, 164);
+    border: 2px solid rgb(247, 237, 102);
+    padding: 0px;
+    width: 33%;
+    height: 100px;
+    margin-left: 30px;
+    float: left;
+    margin-top: 20px;
+}
+
+div:nth-of-type(2) > p{
+    text-align: left;
+}
+
+div:nth-of-type(3){
+    background-color: rgb(172, 216, 236);
+    border: 2px solid rgb(122, 205, 243);
+    width: 33%;
+    height: 100px;
+    margin-right: 30px;
+    padding: 0px;
+    float: right;
+    margin-top: 20px;
+}
+
+div:nth-of-type(3) >p{
+    float: right;
+    text-align: right;
+}
+
+div:nth-of-type(4){
+    background-color: rgb(248, 150, 163);
+    border: 2px solid rgb(236, 99, 99);
+    width: 33%;
+    height: 100px;
+    margin-right: 30px;
+    margin-top: 40px;
+    padding: 5px;
+    float: right;
+}
+
+div:nth-of-type(4) > p{
+    float: right;
+    text-align: right;
+}
+
+div:nth-of-type(5){
+    background-color: rgb(227, 200, 233);
+    border: 2px solid rgb(94, 40, 89);
+    width: 33%;
+    height: 100px;
+    margin-right: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+    padding: 5px;
+    float: left;
+}
+
+div:nth-of-type(5) > p{
+    float: left;
+    width: 200px;
+}
+
+div:nth-of-type(6){
+    background-color: rgb(133, 231, 138);
+    border: 2px solid rgb(112, 190, 101);
+    margin: auto;
+    margin-top: 90px;
+    position: relative;
+    width: 40%;
+    height: 140px;
+    text-align: center;
+}

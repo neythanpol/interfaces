@@ -1,0 +1,142 @@
+body{
+    border: 1px solid white;
+    padding: 10px;
+    width: 180px;
+}
+
+.producto {
+    width: 180px;
+    height: 300px;
+    position: relative;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: green;
+}
+
+#procesador {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.precio {
+    position: absolute;
+    bottom: 105px;
+    left: 50px;
+    transform: translateX(-50%);
+    background-image: url('../Imagenes/boton_amarillo.png');
+    background-size: cover;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px; 
+}
+
+.producto-titulo {
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    right: 10px;
+    color: green;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#iconos {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#iconos .new {
+    width: 20px;
+    height: 20px;
+    background-image: url("../Imagenes/logo_novedad-mini.png");
+    background-size: contain;
+}
+
+.topventas {
+    width: 20px;
+    height: 20px;
+    background-image: url("../Imagenes/logo_topventas-mini.png");
+    background-size: contain;
+    float: left;
+}
+
+#iconos .disponible {
+    width: 20px;
+    height: 20px;
+    background-image: url("../Imagenes/stock-2b.png");
+    background-size: contain;
+    margin-left: 90px;
+}
+
+.hover-iconos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: 180px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+
+body:hover{
+    border: 1px solid green;
+}
+
+.opacidad:hover {
+    opacity: 0;
+}
+
+.producto:hover .hover-iconos {
+    opacity: 1;
+    z-index: 2;
+}
+
+.hover-iconos .icono-previa {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-image: url("../Imagenes/icono-ficha-vista-previa-gris.png");  
+}
+
+.hover-iconos .icono-deseo {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-image: url("../Imagenes/icono-ficha-listadeseo.png");
+}
+
+.hover-iconos .icono-comparador {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-image: url("../Imagenes/icono-ficha-comparador.png");
+}
+
+.hover-iconos .icono-pc {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-image: url("../Imagenes/icono-ficha-configurador.png");
+}
+
+.hover-iconos .icono-carro {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-image: url("../Imagenes/icono-ficha-carro.png");
+}

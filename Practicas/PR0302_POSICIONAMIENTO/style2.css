@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    border: 2px solid black;
+    margin: 0;
+}
+
+body > div:nth-of-type(1){
+    position: relative;
+    width: 100%;
+}
+
+body > div:nth-of-type(1) > div:nth-of-type(1){
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 185, 93);
+}
+
+body > div:nth-of-type(1) > div:nth-of-type(2){
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 185, 93);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+li{
+    display: inline;
+}
+
+ul li:last-child{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* No he podido hacer más ya que he tenido problemas físicos para estar sentado, es por ello que no he ido a clase en estos dos días (a fecha de 31-10), tengo hemorroides graves y por eso he estado en cama. Intentaré ponerme al día por mi cuenta pero visto desde apuntes a hacerlo y practicarlo es bastante diferencia. Gracias por la comprensión */
