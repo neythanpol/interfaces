@@ -1,0 +1,135 @@
+body {
+    background: #f9f9f9 url(../ejercicio3/imagenes/fondo-montana.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0px;
+    padding: 20px 20px 10px 20px;
+    font-size: 34px;
+    color: #333;
+    text-shadow: 1px 1px 1px #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 5px 0px 10px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.lista ul {
+    display: inline-flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.lista ul li{
+    list-style: none;
+}
+
+.lista ul li a {
+    color: #555;
+    background: #fff;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 2px #aaa;
+    text-transform: uppercase;
+    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.imagen-1, .imagen-2, .imagen-3, .imagen-4 {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+}
+
+.imagen-1 img, .imagen-2 img, .imagen-3 img, .imagen-4 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.oculto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    opacity: 0;
+    z-index: 2;
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 0.5s ease, opacity 0.5 ease;
+}
+
+.imagen-1:hover .oculto,
+.imagen-2:hover .oculto,
+.imagen-3:hover .oculto,
+.imagen-4:hover .oculto {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+    transition: clip-path 0.5s ease, opacity 0.5s ease;
+}
+
+.oculto h2 {
+    opacity: 0;
+    transition: opacity 0.3s ease 0.5s;
+}
+
+.oculto p {
+    opacity: 0;
+    transition: opacity 0.3s ease 0.8s;
+}
+
+.imagen-1:hover .oculto h2,
+.imagen-2:hover .oculto h2,
+.imagen-3:hover .oculto h2,
+.imagen-4:hover .oculto h2 {
+    opacity: 1;
+}
+
+.imagen-1:hover .oculto p,
+.imagen-2:hover .oculto p,
+.imagen-3:hover .oculto p,
+.imagen-4:hover .oculto p {
+    opacity: 1;
+}
