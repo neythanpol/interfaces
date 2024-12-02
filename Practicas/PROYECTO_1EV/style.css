@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(fuentes/Montserrat-Bold/Montserrat-Bold.eot) format(embedded-opentype), url(../PROYECTO_1EV/fuentes/Montserrat-Bold/Montserrat-Bold.ttf) format(ttf), url(../PROYECTO_1EV/fuentes/Montserrat-Bold/Montserrat-Bold.woff) format(woff);
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(fuentes/Montserrat-Regular/Montserrat-Regular.eot) format(embedded-opentype), url(fuentes/Montserrat-Regular/Montserrat-Regular.ttf) format(ttf), url(fuentes/Montserrat-Regular/Montserrat-Regular.woff) format(woff);
+}
+
+@font-face {
+    font-family: 'Open-sans';
+    src: url(fuentes/Open-sans/OpenSans-Regular.ttf) format(ttf);
+}
+
+body {
+    background-color: #F4F4F4;
+    width: 100%;
+    margin: 0px;
+}
+
+header {
+    height: 270px;
+    width: 100%;
+    text-align: center;
+    background-image: url(imagenes/panoramica.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+    line-height: 270px;
+    font-size: 3em;
+    font-family: 'Montserrat-Bold';
+}
+
+main {
+    margin: 120px;
+}
+
+.poi {
+    position: relative;
+    height: 330px;
+    width: 236px;
+    margin: 30px;
+    box-shadow: 2px 2px 2px 0 grey;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.articulo {
+    height: 330px;
+    width: 236px;
+}
+
+article {
+    width: 236px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+article > * {
+    box-sizing: border-box;
+}
+
+article img {
+    height: 50%;
+    object-fit: cover;
+    border-bottom: 1px solid;
+}
+
+article h2 {
+    font-family: 'Montserrat-Regular';
+    text-align: center;
+    font-size: 1.1em;
+    height: 15%;
+    padding-left: 10px;
+    margin: 0px;
+    margin-left: 5px;
+}
+
+article p {
+    font-family: 'Open-sans';
+    text-align: center;
+    height: 30%;
+    padding: 5px;
+    margin: 5px;
+    color: black;
+}
+
+article footer {
+    font-family: 'Open-sans';
+    text-align: right;
+    height: 5%;
+    padding: 1px;
+}
+
+.sobre {
+    position: relative;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    bottom: 50%;
+    transition: 1s;
+}
+
+.poi:hover .sobre {
+    transition: 2s;
+    opacity: 1;
+    scale: (1);
+}
+
+.poi:hover, .poi:hover img {
+    transition: 2s;
+    opacity: 1; 
+}
+
+.poi:hover img {
+    opacity: 0.5;
+}
+
+.articulo img {
+    transition: 1s;
+}
+
+.articulo:hover img {
+    transition: 1s;
+    transform:scale(3);
+}
+
+.poi:hover {
+    transition: 2s;
+    background-color: rgb(58, 56, 56);
+}
+
+aside {
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 2px 0 2px 0 gray;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #F4F4F4;
+    transition: all .8s;
+}
+
+aside h2 {
+    font-family: 'Montserrat-Bold';
+    text-align: center;
+    padding: 10px;
+}
+
+li {
+    height: 52px;
+    font-family: 'Montserrat-Regular';
+    text-transform: uppercase;
+    font-size: .8em;
+    padding: -10px 0 10px 5px;
+}
+
+aside p {
+    display: block;
+}
+
+li p:first-of-type {
+    font-size: 1.2em;
+}
+
+p[class="num"] {
+    border-radius: 55px;
+    float: right;
+    margin-right: 20px;
+    margin-top: -25px;
+    background-color: gray;
+    padding: 6px;
+}
+
+li:hover {
+    background-color: #EDEEEF;
+}
+
+.selected {
+    background-color: #EDEEEF;
+    border-left: 10px grey solid;
+}
+
+#arrow {
+    display: block;
+    background: url(imagenes/arrow.png);
+    background-color: #A3A3A3;
+    background-size: contain;
+    box-shadow: 0 0 2px 3px lightgrey;
+    border-radius: 10%;
+    float: right;
+    height: 40px;
+    margin-right: -40px;
+    rotate: 180deg;
+    width: 40px;
+    transition: .8s;
+}
+
+.plegado {
+    background-color: #666;
+    transform: translateX(-85%);
+    transition-duration: .8s;
+}
+
+.plegado #arrow {
+    display: inline-block;
+    transform: rotateX(180deg);
+    transition-duration: .8s;
+    background-color: #F4F4F4;
+}

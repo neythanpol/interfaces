@@ -1,0 +1,13 @@
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenido {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}

@@ -1,0 +1,15 @@
+.contenedor {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadrado {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px gray;
+}

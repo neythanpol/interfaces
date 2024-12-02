@@ -1,0 +1,11 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.contenido {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Natán Blanco Rodríguez">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto 1 Evaluación</title>
+    <script src="javascript/jquery-3.1.1.slim.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#arrow').on('click', function() {
+                $('aside').toggleClass('plegado');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>MATURÍN</h1>
+    </header>
+    <main>
+        <div class="poi">
+            <div class="articulo">
+                <article>
+                    <img src="imagenes/zoo.jpg" alt="zoo">
+                    <h2>Parque zoológico "La Guaricha"</h2>
+                    <p>Jardín zoológico urbano cercano al centro de la ciudad.</p>
+                    <footer>36 visitados</footer>
+                </article>
+            </div>
+            <div class="sobre">
+                <h2>Parque zoológico "La Guaricha"</h2>
+            </div>
+        </div>
+        <div class="poi">
+            <div class="articulo">
+                <article>
+                    <img src="imagenes/estadio.jpg" alt="Estadio">
+                    <h2>Estadio Monumental</h2>
+                    <p>Estadio sede de la federación venezolana de fútbol.</p>
+                    <footer>342 visitados</footer>
+                </article>
+            </div>
+            <div class="sobre">
+                <h2>Estadio Monumental</h2>
+            </div>
+        </div>
+        <div class="poi">
+            <div class="articulo">
+                <article>
+                    <img src="imagenes/museo.jpg" alt="Museo">
+                    <h2>Museo Mateo Manaure</h2>
+                    <p>Forma parte del Complejo Cultural de Maturín.</p>
+                    <footer>37 visitados</footer>
+                </article>
+            </div>
+            <div class="sobre">
+                <h2>Museo Mateo Manaure</h2>
+            </div>
+        </div>
+        <div class="poi">
+            <div class="articulo">
+                <article>
+                    <img src="imagenes/catedral.jpg" alt="Catedral">
+                    <h2>Catedral Nuestra Señora del Carmen</h2>
+                    <p>Es una de las iglesias más grandes y mejor decoradas del país y se considera la segunda más alta de Latinoamérica</p>
+                    <footer>2045 visitados</footer>
+                </article>
+            </div>
+            <div class="sobre">
+                <h2>Catedral Nuestra Señora del Carmen</h2>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <h2>MATURÍN</h2>
+        <nav>
+            <ul>
+                <li class="selected">
+                    <p>Turismo</p>
+                    <p>en Maturín</p>
+                    <p class="num">721</p>
+                </li>
+                <li class="selected">
+                    <p>Hoteles</p>
+                    <p>en Maturín</p>
+                    <p class="num">32</p>
+                </li>
+                <li class="selected">
+                    <p>Qué ver</p>
+                    <p>en Maturín</p>
+                    <p class="num">73</p>
+                </li>
+                <li class="selected">
+                    <p>Restaurantes</p>
+                    <p>en Maturín</p>
+                    <p class="num">114</p>
+                </li>
+                <li class="selected">
+                    <p>Fotos</p>
+                    <p>en Maturín</p>
+                    <p class="num">221</p>
+                </li>
+            </ul>
+        </nav>
+        <a id="arrow" href="#">
+        </a>
+    </aside>
+</body>
+</html>
