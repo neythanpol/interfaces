@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+    background-color: #EBECED;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 300px);
+    width: 1080px;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen {
+    background-color: white;
+    background-image: url(imagenes/encabezado.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+}
+
+header > div {
+    background-color: #37454D;
+    height: 50px;
+    width: 100%;
+}
+
+header, footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div {
+    background-color: #293339;
+    height: 50px;
+    width: 100%;
+}
+
+footer > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #37454D;
+    height: 100px;
+    width: 100%;
+    color: white;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    width: 250px;
+    height: calc(100vh - 300px);
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #BBB;
+    box-sizing: border-box;
+}
+
+.principal {
+    width: 826px;
+    height: calc(100vh - 300px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.hotel {
+    background-color: #007FAD;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 230px;
+}
+
+.hotel:nth-child(1) {
+    margin-top: 10px;
+}
+
+.hotel:nth-last-child(1) {
+    margin-bottom: 10px;
+}
+
+.hotel:hover {
+    background-color: #004760;
+    transform: translateX(15px);
+    transition: .8s;
+}
+
+.hoteles {
+    display: flex;
+    flex-direction: row;
+    width: 816px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid #CCC;
+    overflow: hidden;
+}
+
+.imagen-hotel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+}
+
+.imagen-hotel > img {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+}
+
+.texto-hotel {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px;
+}
+
+.estrella {
+    background-image: url(imagenes/cuatro-estrellas.png);
+}
+
+.bordes {
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+}
+
