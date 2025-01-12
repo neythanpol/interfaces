@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Natán Blanco Rodríguez">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Imagenes/hippo-solid.svg" type="image/x-icon">
+    <title>Registro - HYPSPORTS</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="logo"> 
+            <img src="../Imagenes/hippo-solid.svg" alt="Logo">
+            <p>HYPSPORTS</p>
+        </div>
+        <nav class="nav"> 
+            <ul>
+                <li>
+                    <a href="#actividades">Actividades</a>
+                </li> 
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h2>Formulario de Corredor</h2>
+        <form action="">
+            <div class="datos-user">
+                <div class="nombre">
+                    <label for="nombre">Nombre y apellidos:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </div>
+                <div class="username">
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="password">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="estatura">
+                    <label for="estatura">Estatura (cm):</label>
+                    <input type="number" name="estatura" id="estatura" required>
+                </div>
+                <div class="peso">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" name="peso" id="peso" required>
+                </div>
+                <div class="fecha">
+                    <label for="fecha">Fecha de Nacimiento:</label>
+                    <input type="date" name="fecha" id="fecha" required>
+                </div>
+            </div>
+            <div class="datos-fisicos">
+                <fieldset>
+                    <legend>Zona de Frecuencia Cardíaca</legend>
+                    <label for="sprint">Sprint:</label>
+                    <input type="number" name="sprint" id="sprint"><br>
+
+                    <label for="velocidad">Velocidad:</label>
+                    <input type="number" name="velocidad" id="velocidad"><br>
+
+                    <label for="cardio">Cardio:</label>
+                    <input type="number" name="cardio" id="cardio"><br>
+
+                    <label for="fitness">Fitness:</label>
+                    <input type="number" name="fitness" id="fitness"><br>
+
+                    <label for="sencillo">Sencillo:</label>
+                    <input type="number" name="sencillo" id="sencillo">
+                </fieldset>
+            </div>
+            <div class="corredor">
+                <label for="tipo-corredor">Tipo de Corredor:</label>
+                <select name="tipo-corredor" id="tipo-corredor" required>
+                    <option value="">Seleccione uno</option>
+                    <option value="casual">Corredor Casual</option>
+                </select>
+                <details>
+                    <summary>Corredor de Medio Fondo (5km, 10km, Media Maratón)</summary>
+                    <div>
+                        <label for="mejor-5km">Mejor Marca en 5km</label>
+                        <input type="text" name="mejor-5km" id="mejor-5km"><br>
+
+                        <label for="mejor-10km">Mejor Marca en 10km</label>
+                        <input type="text" name="mejor-10km" id="mejor-10km">
+
+                        <label for="mejor-media-maraton">Mejor Marca en Media Maratón</label>
+                        <input type="text" name="mejor-media-maraton" id="mejor-media-maraton">
+                    </div>
+                </details>
+                <details>
+                    <summary>Corredor de Fondo (Media Maratón, Maratón)</summary>
+                    <div>
+                        <label for="mejor-media-maraton">Mejor Marca en Media Maratón</label>
+                        <input type="text" name="mejor-media-maraton" id="mejor-media-maraton">
+
+                        <label for="mejor-maraton">Mejor Marca en Maratón</label>
+                        <input type="text" name="mejor-maraton" id="mejor-maraton">
+                    </div>
+                </details>
+                <details>
+                    <summary>Corredor de Trail (Distancia, Desnivel, Tiempo)</summary>
+                    <div>
+                        <label for="carrera-nombre">Nombre de la Carrera más Larga Participada</label>
+                        <input type="text" name="carrera-nombre" id="carrera-nombre">
+
+                        <label for="carrera-distancia">Distancia:</label>
+                        <input type="text" name="carrera-distancia" id="carrera-distancia">
+
+                        <label for="carrera-desnivel">Desnivel:</label>
+                        <input type="text" name="carrera-desnivel" id="carrera-desnivel">
+
+                        <label for="carrera-tiempo">Tiempo Empleado:</label>
+                        <input type="text" name="carrera-tiempo" id="carrera-tiempo">
+                    </div>
+                </details>
+            </div>
+        </form>
+        <button type="submit">ENVIAR</button>
+    </main>
+    <footer class="footer"> 
+        &copy; 2024 Natán Blanco. Todos los derechos reservados. 
+    </footer>
+</body>
+</html>
